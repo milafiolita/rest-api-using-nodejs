@@ -1,0 +1,20 @@
+extends layout
+
+    .container.table-responsive.mt-5
+      div(style='background-color: #ebebeb;')
+        h2 Add New User
+      form.shadow-md.w-full.mt-5(action='/addUser', method='POST')
+        .form-group.row
+          label.col-sm-2.col-form-label(for='username') Username
+          .col-sm-10
+            input#name.form-control(type='text', name='username', required='')
+        .form-group.row
+          label.col-sm-2.col-form-label(for='user_email') User Email
+          .col-sm-10
+            input#student_email.form-control(type='email', name='user_email', required='')
+        .form-group.row
+          label.col-sm-2.col-form-label(for='password') Password
+          .col-sm-10
+            input#name.form-control(type='text', name='password', required='')
+        .col-sm-10
+          input.btn.btn-info(type='submit', value='Input')

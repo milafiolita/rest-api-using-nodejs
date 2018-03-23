@@ -1,0 +1,17 @@
+include layout
+
+block content
+  .container.mt-5
+    // Div that will hold the pie chart
+    div(style='background-color: #ebebeb;')
+      h2 Gender Ratio
+    #piechart
+    div(style='background-color: #ebebeb;')
+      h2 Students Chart
+    .form-group.dropdown
+      button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+        | Years
+      .dropdown-menu
+        a.dropdown-item(href='/statistics/2018') 2018
+        a.dropdown-item(href='/statistics/2017') 2017                 
+    #line_chart
